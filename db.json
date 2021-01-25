@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Antoaneta",
+      "friends": [
+        {
+          "friendId": "3",
+          "name": "John",
+          "conversation": [
+            {
+              "senderId": "1",
+              "text": "Hi John!",
+              "time": "10:40"
+            }
+          ]
+        },
+        {
+          "friendId": "2",
+          "name": "Maria",
+          "conversation": [
+            {
+              "senderId": "1",
+              "text": "Hi Maria!",
+              "time": "11:40"
+            },
+            {
+              "senderId": "2",
+              "text": "Hi Antoaneta!",
+              "time": "11:45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Maria",
+      "friends": [
+        {
+          "friendId": "1",
+          "name": "Antoaneta",
+          "conversation": [
+            {
+              "senderId": "1",
+              "text": "Hi Maria!",
+              "time": "11:40"
+            },
+            {
+              "senderId": "2",
+              "text": "Hi Antoaneta!",
+              "time": "11:45"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "John",
+      "friends": [
+        {
+          "friendId": "1",
+          "name": "Antoaneta",
+          "conversation": [
+            {
+              "senderId": "1",
+              "text": "Hi John!",
+              "time": "10:40"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,38 +1,109 @@
+
+li {
+  list-style-type: none;
+}
 .App {
+  min-width:700px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+}
+.headline {
+  width: 97%;
+  text-transform: uppercase;
+  background-color: teal;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding-left: 3%;
+}
+
+
+.chat-window {
+  min-width: 300px;
+  width: 75%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.message-feed {
+  min-width: 100%;
+}
+.friends-list {
+  padding: 0;
+  background-color: #e6ffe6;
+  min-width: 70px;
+  width: 24%;
+  height: 95vh;
+  margin: 0;
+}
+.friend {
+  min-height: 50px;
+  width: 97%;
+  padding-left: 3px;
+  border-bottom: 1px solid #333333;
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+.own-message {
+  margin: 2% 0 2% 40%;
+  background-color: #ccffcc;
+}
+.friend-message {
+  margin: 2% 20% 2% 10%;
+}
+
+.message {
+  padding: 5px 10px;
+  width: 55%;
+  border-radius: 4px;
+  box-shadow: 2px 2px 1px #333333;
+}
+
+.message-form {
+  border-top: 1px solid #333333;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.input-text {
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  border: 0;
+  outline: none;
+  padding: 14px;
+  border-bottom: 3px solid rgba(32, 128, 0, 0.3);
+}
+
+
+.send-button {
+  width: 90px;
+  background-color: #336600;
+  border: none;
+  padding: 15px;
+  color: #ffffff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-form {
+  width: 30%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ml-1 {
+  margin-left: 1rem;
 }
